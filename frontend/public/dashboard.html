@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav>
+    <div id="nav-user-info">
+      <span id="username"></span>
+      <button id="logout-button">Abmelden</button>
+    </div>
+    <ul>
+      <li><a href="/dashboard.html">Dashboard</a></li>
+      <li><a href="/matches.html">Meine Matches</a></li>
+    </ul>
+  </nav>
+  <h1>Dashboard</h1>
+  <form id="available-times-form">
+    <h2>Verfügbare Zeiten eintragen</h2>
+    <input type="datetime-local" id="start-time" required>
+    <input type="datetime-local" id="end-time" required>
+    <button type="submit">Zeiten speichern</button>
+  </form>
+  <form id="propose-match-form">
+    <h2>Match vorschlagen</h2>
+    <label for="player-select">Spieler auswählen:</label>
+    <select id="player-select" required>
+      <option value="">-- Bitte wählen --</option>
+    </select>
+    <input type="datetime-local" id="proposed-time" required>
+    <button type="submit">Match vorschlagen</button>
+  </form>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

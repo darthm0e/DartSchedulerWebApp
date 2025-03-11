@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verfügbare Zeiten</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <nav>
+    <div id="nav-user-info">
+      <span id="username"></span>
+      <button id="logout-button">Abmelden</button>
+    </div>
+    <ul>
+      <li><a href="/dashboard.html">Dashboard</a></li>
+      <li><a href="/matches.html">Meine Matches</a></li>
+    </ul>
+  </nav>
+  <h1>Verfügbare Zeiten</h1>
+  <form id="select-user-form">
+    <label for="user-select">Spieler auswählen:</label>
+    <select id="user-select" required>
+      <option value="">-- Bitte wählen --</option>
+    </select>
+    <button type="submit">Zeiten anzeigen</button>
+  </form>
+  <div id="available-times-list"></div>
+
+  <!-- Neue Sektion für eigene verfügbare Zeiten -->
+  <h2>Meine verfügbaren Zeiten</h2>
+  <div id="my-available-times-list"></div>
+
+  <!-- Neue Sektion für vorgeschlagene Termine -->
+  <h2>Vorgeschlagene Termine</h2>
+  <div id="proposed-matches-list"></div>
+
+  <script src="/js/matches.js"></script>
+</body>
+</html>
